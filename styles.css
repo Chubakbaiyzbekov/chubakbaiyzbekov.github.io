@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+}
+
+body{
+    height: auto;
+    width: 100%;
+    background-color: rgba(239, 233, 217, 0.5);
+}
+
+/* Main mother container inside the body which contains everything in it */
+.main-container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.6), -12px 0 8px -4px rgba(31, 73, 125, 0.6);
+}
+
+/*=========================== Header styles =================================*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    height: 10vh;
+    background-color: #faedcd;
+}
+
+/* H1 Element which serves as a simple text logo of the website */
+#logo{
+    padding-left: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+/* UL element which contains navigation links and it's flex */
+#navigation{
+    display: flex;
+}
+
+/* List items inside the navigation link container */
+#navigation li>a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 1.5rem;
+    padding-right: 1rem;
+    border-right: 4px solid black;
+    transition: color 0.2s linear;
+}
+
+#navigation li> a:hover{
+    color: rgb(46, 240, 237);
+    text-decoration: underline;
+}
+
+/*==================== Design of the middle section ============================*/
+#middle-section{
+    height: auto;
+    /* overflow: auto; */
+    padding: 2rem 0;
+    background-color: #A9A9A9;
+
+}
+
+/* To hide scroll bar of the middle section for Chrome */
+/* #middle-section::-webkit-scrollbar{
+    display: none;
+} */
+
+
+/*To hide scroll bar of the middle section for IE, Edge and Firefox */
+/* #middle-section{
+    -ms-overflow-style: none;  /* IE and Edge */
+    /* scrollbar-width: none;  /*Firefox*/
+  /* } */
+
+/* Intro of the middle section (Car market in KGS) */
+#intro{
+    text-align: center;
+    font-size: 32px;
+}
+
+/*Detailed information paragraph under the intro element */
+#details{
+    line-height: 2;
+    text-align: justify;
+    padding: 0 4.5rem;
+    font-size: 20px;
+}
+
+#details2{
+    line-height: 2;
+    font-style: italic;
+    text-align: justify;
+    padding: 0 4.5rem;
+    font-size: 20px;
+}
+
+/* Large vehicle picture at the center of the middle section */
+#carphoto{
+    height: 400px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/*================================ Design of the footer element ===================*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4.5rem;
+    height: 10vh;
+
+    background-color: #faedcd;
+}
+
+/* Container for the social media links */
+#social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Social media icons */
+#social img{
+    height: 40px;
+    width: 40px;
+}
+
+/* All the social media links*/
+#social a{
+    color: black;
+    margin-right: 2.5rem;
+    font-weight: bold;
+}
+
+/*============================ Design of the ABOUT.HTML ==============================*/
+/*Intro slogan of the about.html page */
+#about-intro{
+    text-align: center;
+    font-size: 32px;
+}
+
+/* Container element for two paragraphs to divide them horizontally */
+#paragraph-container{
+    margin: 0.5rem 4.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* Left paragraph */
+#first-paragraph{
+    height: 400px;
+    background-color: aquamarine;
+}
+
+/* Right paragraph */
+#second-paragraph{
+    background-color: aquamarine;
+}
+
+/* Another paragraph */
+#another-paragraph{
+    background-color: aquamarine;
+    grid-column: span 2;
+    height: 150px;
+}
+
+/*=============================== Design of the HOWDOES.HTML page ==========================*/
+/* Intro of the howdoes.html page */
+#howdoes-intro{
+    text-align: center;
+    font-size: 32px;
+}
+
+/* Descripton paragraph of the howdoes.html page */
+#howdoes-description{
+    margin: 0.9rem 4.5rem;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/*================================== Design of the SEARCH.HTML page ========================*/
+/* Intro of the search.html page*/
+#search-intro{
+    text-align: center;
+    font-size: 32px;
+}
+
+/* Container element for the search form inputs */
+#search-form{
+    height: 70px;
+    width: 1000px;
+    background-color: aquamarine;
+    margin: 0.5rem auto;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search-form  *{
+    font-family: Helvetica, sans-serif;
+    outline: none;
+}
+
+/* To make a space between input elements */
+#search-form select{
+    margin-right: 1.5rem;
+}
+
+/* Search Button design */
+#search-button{
+    padding: 0.8rem;
+    border-radius: 35px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    width: 300px;
+    background-color: #A9A9A9;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s linear background-color 0.2s linear;
+    transition: color 0.2s linear;
+}
+
+#search-button:hover{
+    transform: scale(0.98);
+    background-color: rgb(36, 32, 32);
+    color: rgb(46, 240, 237);
+}
+
+/* Container for displaying search results */
+#results-section{
+    width: 1000px;
+    background-color: aquamarine;
+    margin: 0.5rem auto;
+    padding: 0.5rem 1rem;
+}
+
+/* h3 Item which displays the selected car model and brand */
+#results-model{
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 0.8rem;
+}
+
+/* Paragraph description of the selected car model */
+#results-description{
+    text-align: justify;
+    padding: 0 4.5rem;
+}
+
+/* Large SUV image in the search results */
+#suv-image{
+    height: 300px;
+    width: auto;
+    display: block;
+    margin: 0.5rem auto;
+}
+
+/* Price for the selected car in the results */
+#results-price{
+    padding: 0.8rem 4.5rem;
+}
+
+/* Description of the price (small text) */
+#results-pricedescription{
+    padding: 0 5.5rem;
+    text-align: justify;
+    font-style: italic;
+}
